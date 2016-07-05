@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Blue tomato timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+     <link rel="stylesheet" href="css/bootstrap.min.css">   
+     <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+	  <div id="setup">
+		<div id="session-length">SESSION LENGTH<br>
+		  <span class="button minus">-</span>
+		  <span><input type="text" class="length" value="25" size=1>
+			</input></span>
+		  <span class="button plus">+</span>
+		</div>
+		<!--session-length-->
+		<div id="break-length">BREAK LENGTH<br>
+		  <span class="button minus">-</span>
+		  <span><input type="text" class="length" value="5" size=1>
+			</input></span>
+		  <span class="button plus">+</span>
+		</div>
+		<!--break-length-->
+		<div class="row">
+		  <div class="col-xs-6 col-md-3 col-md-offset-3 icons-col">
+			<button type="button" class="icons" id="start"><i class="fa fa-play-circle-o" aria-hidden="true"></i></button>
+		  </div>
+		  <!--col-->
+		  <div class="col-xs-6 col-md-3   icons-col">
+			<button type="button" class="icons" id="reset"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+		  </div>
+		  <!--col-->
+		</div>
+		<!--row-->
+	  </div>
+	  <!--setup-->
+	  <div id="main">
+		<audio><source src="https://dl.dropboxusercontent.com/u/63001203/gentle-alarm.mp3">
+		</audio>
+		<div class="row">
+		  <div class="col-xs-6 col-md-3 col-md-offset-3 icons-col">
+			<button type="button" class="icons" id="pause"><i class="fa fa-pause-circle-o" aria-hidden="true"></i></button>
+		  </div>
+		  <!--col-->
+		  <div class="col-xs-6 col-md-3 icons-col">
+			<button type="button" class="icons" id="stop"><i class="fa fa-stop-circle-o" aria-hidden="true"></i></button>
+		  </div>
+		  <!--col-->
+		</div>
+		<!--row-->
+
+		<div id="outer-timer">
+		  <canvas id="canvas" width="284" height="284">Your browser does not support canvas tag.</canvas>
+		  <div id="display">
+			<p id="time"></p>
+			<p id="session-break"></p>
+		  </div>
+		  <!--display-->
+		</div>
+		<!--outer-timer-->
+	  </div>
+	  <!--main-->
+	</div>
+<!--container-fluid-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/4c3a2e2c94.js"></script>
+	<script src="js/index.js"></script>    
+     
+  </body>
+</html>

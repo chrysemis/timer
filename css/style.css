@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Overlock);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+ 
+body {
+  background: #F5F5F5;
+}
+
+#setup {
+  font-family: Open Sans;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 10% auto;
+}
+
+#session-length,
+#break-length {
+  font-size: 2em;
+  cursor: default;
+}
+
+#session-length::-moz-selection,
+#break-length::-moz-selection,
+.button::-moz-selection,
+.length::-moz-selection {
+  background: #F8F8F8;
+}
+
+#session-length::selection,
+#break-length::selection,
+span::selection,
+.button::selection,
+.length::selection {
+  background: #F5F5F5;
+}
+
+.button {
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+#canvas {
+  z-index: 1;
+  margin: 0 auto;
+  position: absolute;
+  display: block;
+}
+
+#outer-timer {
+  text-align: center;
+  background: #F5F5F5;
+}
+
+#outer-timer {
+  width: 284px;
+  height: 284px;
+  margin: 5% auto;
+}
+
+#display {
+  position: relative;
+  top: 35%;
+  font-family: Overlock;
+  color: indigo;
+}
+
+#time {
+  line-height: 0.7em;
+ font-size: 4em;  
+}
+
+#session-break {
+  font-size: 2em;
+}
+
+.length {
+  background: #F5F5F5;
+  border: none;
+  cursor: text;
+  text-align: center;
+}
+
+.length:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.length:focus {
+  opacity: 1;
+  transform: scale(1);
+  background: #FCFCFC;
+  outline: 2px solid;
+  outline-color: #5C5C5C;
+}
+
+.icons {
+  width: 45px;
+  height: 45px;
+  border: 1px solid indigo;
+  border-radius: 10%;
+  background: orange;
+  color: indigo;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.icons-col {
+  margin-top: 5%;
+}
+
+#main {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
